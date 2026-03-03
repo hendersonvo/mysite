@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mysite",
+    "title": "Henderson Vo",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is the landing page"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "here is my cv"
+  },
+  {
+    "objectID": "flex.html",
+    "href": "flex.html",
+    "title": "My travels",
+    "section": "",
+    "text": "Placeholder"
+  },
+  {
+    "objectID": "projectpage.html",
+    "href": "projectpage.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My projects"
   }
 ]

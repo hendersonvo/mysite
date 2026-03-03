@@ -3,12 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "mysite"
+  title: "Henderson Vo"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - cv.qmd
+      - flex.qmd
+      - projectpage.qmd
 
 format:
   html:
