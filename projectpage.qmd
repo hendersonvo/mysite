@@ -1,25 +1,41 @@
 ---
 title: "Projects"
+subtitle: "Take a look at some of what I've been working on lately"
 ---
 
-My projects
 
-at least one post with code, its output, and writing about what you’re doing and why
 
-at least one post with project or paper description (from a job, research project, class)
+## Predicting sea turtle nesting behavior in Costa Rica
 
-more sample text
+In August 2025, I had the most fortunate opportunity to take a field course in Playa Blanca, Costa Rica where I assisted on local sea turtle conservation efforts. 
+
+::: {layout-nrow=1}
+
+::: {.figure}
+![Searching for turtles on our "ocean days"](images/turtle_boat.jpg){.regular-hover} 
+:::
+::: {.figure}
+![Taking sea turtle measurement requires a team effort!](images/turtle_measure.jpg){.regular-hover} 
+:::
+:::
+I concluded my work by writing a final report on my own research question relating to Olive ridley nesting. Thinking like a climate scientist, I wondered how different weather conditions might affect the frequency of arribada nesting events, which are an evolutionary response to predation meant to increase recruitment. 
+
+You can read about my findings [here](https://drive.google.com/drive/folders/1k61FavMsGzgUaESVVAYog51y8TfDfY2P).
+
+![](turtle_paper.pdf){width="100%" height="700px"}
 
 ## Monte Carlo Simulation: Blackjack
 
 If you don't know, blackjack is a common card game where the dealer and the players all try to attain cards whose values accumulate as close to 21 without surpassing it. As a player, you start with two cards and can either "hit" or "pass", meaning you can choose to receive another card from the dealer or choose to not take any more cards.
 
-I was curious to know how likely it is that a player would win if they always choose to pass and keep their two cards. So, I scripted a simulation in Python to test it out. Over 100,000 iterations, I began to see the win rate converge around 42% and the tie ("push") rate converge around 5%. Once again, the house takes the advantage. How fun!
+I wanted to know how likely it is that a player would win if they always choose to pass and keep their two cards. So, I scripted a simulation in Python to test it out. Over 100,000 iterations, I began to see the win rate converge around 42% and the tie ("push") rate converge around 5%. Once again, the house takes the advantage, albeit marginally. Special thanks to Dr. Jeff Moehlis for assigning me this unique project!
 
-Learn more on my GitHub [here](https://github.com/hendersonvo/monte-carlo_card-sim).
+Learn more on my [GitHub](https://github.com/hendersonvo/monte-carlo_card-sim).
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
 library(reticulate)
 ```
 
@@ -37,24 +53,9 @@ def card_value(number):
         print("Not a valid card")
     elif number in ([0, 10, 20, 30, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]): # corresponds to a 10, J, Q, or K
         return 10
-    elif number % 10 == 1: # corresponds to an ace
-        return 1
-    elif number % 10 == 2:
-        return 2
-    elif number % 10 == 3:
-        return 3
-    elif number % 10 == 4:
-        return 4
-    elif number % 10 == 5:
-        return 5
-    elif number % 10 == 6:
-        return 6
-    elif number % 10 == 7:
-        return 7
-    elif number % 10 == 8:
-        return 8
     else:
-        return 9
+        number = number % 10
+        return number
 
 def player(cards):
     ''' returns the score of the player's hand calculated from the first two cards in the deck
@@ -93,7 +94,9 @@ num_push = 0
 win_streak = 0
 longest_streak = 0
 
-score_dict = {4:0, 5:0, 6:0, 7:0, 8:0, 9:0, 10:0, 11:0, 12:0, 13:0, 14:0, 15:0, 16:0, 17:0, 18:0, 19:0, 20:0, 21:0}
+score_dict = {}
+for i in range(4, 22):
+    score_dict.update({i: 0})
 
 
 for i in range(num_games):
@@ -132,6 +135,9 @@ frequencies = list(score_dict.values())
 plt.figure(figsize=(10, 6))
 plt.bar(scores, frequencies, color='skyblue', edgecolor='black')
 plt.title(f'Distribution of Player Scores (N={num_games:,})')
+plt.figtext(0.7, 0.01, f"Probability player wins: {win_prob * 100:.4f}%\n\
+Probability of push: {push_prob * 100:.4f}%\n\
+Longest winning streak: {longest_streak} games", wrap = True, fontsize=8, color='gray')
 plt.xlabel('Final Score')
 plt.ylabel('Frequency')
 plt.xticks(scores)

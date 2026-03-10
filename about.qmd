@@ -12,11 +12,9 @@ about:
       href: mailto:hendersonvo@ucsb.edu
 ---
 
-![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.JPG){width="100%" height="400px"}
+![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.JPG){height="400px"}
 
-3 photos of me throughout this page
-
-more sample text
+Hi! My name is Henderson and I am a third-year undergraduate at UC Santa Barbara studying Environmental Studies and Statistics & Data Science. I'm interested in leveraging data science tools to investigate climate change impacts across environmental systems.
 
 # section 1
 
