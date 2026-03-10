@@ -10,15 +10,15 @@ I really love trees. I knew that I loved trees for the first time during my sixt
 
 ::::: {layout-nrow="1"}
 ::: figure
-![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.JPG){.regular-hover}
+![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.jpg){.regular-hover}
 :::
 
 :::figure
-![The biggest crossection of a tree trunk I've seen yet](images/tree_shot.jpg)
+![The biggest crossection of a tree trunk I've seen yet](images/tree_shot.jpg){.regular-hover}
 :::
 
 ::: figure
-![I hyperbolically declared this was the best day of my life](images/tree_pose.JPG){.regular-hover}
+![I hyperbolically declared this was the best day of my life](images/tree_pose.jpg){.regular-hover}
 :::
 :::::
 
