@@ -1,11 +1,26 @@
 ---
 title: "Henderson Vo"
+toc: false
+image: images/headshot.jpg
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 20em
+  links: 
+    - text: GitHub
+      href: https://github.com/hendersonvo
+    - text: LinkedIn
+      href: https://linkedin.com/in/henderson-vo-a1b712275
+    - text: Email
+      href: mailto:hendersonvo@ucsb.edu
 ---
 
-This is the landing page
+### Welcome!
 
-Picture of me goes here
+My name is Henderson and I'm happy you're here! This website is meant to act as a personal portfolio. Feel free to browse and learn more about my work. 
 
-Bio goes here (education, work, etc.)
+----------------------
 
-Sample text (post repo name change)
+I am currently studying at UC Santa Barbara to earn my bachelor's in Environmental Studies and Statistics & Data Science. In September 2025, I joined the [Bren-Environmental Studies Fellows](https://bren.ucsb.edu/undergrad-mentoring/bren-es-fellows-program/bren-es-fellows/henderson-vo) program. 
+
+My work revolves around quantitative ecology and climate resilience. Please reach out through email if you would like to chat.
