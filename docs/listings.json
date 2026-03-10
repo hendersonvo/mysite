@@ -5,6 +5,9 @@
   },
   {
     "listing": "/projects.html",
-    "items": []
+    "items": [
+      "/projects/monte_carlo/index.html",
+      "/projects/costa_rica/index.html"
+    ]
   }
 ]

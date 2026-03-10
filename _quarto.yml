@@ -14,7 +14,8 @@ website:
         text: CV
       - href: projects.qmd
         text: Projects
-      - flex.qmd
+      - href: flex.qmd
+        text: Travels
 
 format:
   html:
