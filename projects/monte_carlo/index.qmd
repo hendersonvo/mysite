@@ -2,6 +2,11 @@
 title: "Analyzing Win-Rate Variance Using a Monte Carlo Simulation"
 description: The Law of Large Numbers meets blackjack
 format: html
+categories:
+    - Python
+    - Modeling and Simulation
+    - Data Visualization
+    - Final Project
 ---
 
 If you don't know, blackjack is a common card game where the dealer and the players all try to attain cards whose values accumulate as close to 21 without surpassing it. As a player, you start with two cards and can either "hit" or "pass", meaning you can choose to receive another card from the dealer or choose to not take any more cards.

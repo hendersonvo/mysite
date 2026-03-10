@@ -3,10 +3,10 @@ title: "Curriculum Vitae"
 toc: false
 ---
 
-Updated March 2026. [View](https://drive.google.com/file/d/1qU8e4H6B-PGdhMZKixZm1AT8z80a9asK/view?usp=sharing)
+Updated March 2026. [View](CV_Henderson_Vo.pdf)
 
---------------
+------------------------------------------------------------------------
 
 ![](CV_Henderson_Vo.pdf){width="100%" height="700px"}
 
---------------
+------------------------------------------------------------------------
