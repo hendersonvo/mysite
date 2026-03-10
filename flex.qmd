@@ -1,8 +1,10 @@
 ---
-title: "My travels"
+title: "My travel portfolio"
 toc: false
 ---
 
 Placeholder (free for all)
+
+interactive map here?
 
 # include sections

@@ -1,23 +1,32 @@
 ---
 title: "About me"
 toc: false
-about:
-  template: jolla
-  links: 
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/henderson-vo-a1b712275/
-    - text: GitHub
-      href: https://github.com/hendersonvo
-    - text: Email
-      href: mailto:hendersonvo@ucsb.edu
----
 
-![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.JPG){height="400px"}
+---
+::::: {layout-nrow="1"}
+::: figure
+![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.jpg){.regular-hover}
+:::
+:::figure
+![I hyperbolically declared this was the best day of my life](images/tree_pose.jpg){.regular-hover}
+:::
+:::
 
 Hi! My name is Henderson and I am a third-year undergraduate at UC Santa Barbara studying Environmental Studies and Statistics & Data Science. I'm interested in leveraging data science tools to investigate climate change impacts across environmental systems.
 
-# section 1
+## My food
 
-# section 2
+I'm not competitive about it, but I consider myself to be a pretty big foodie. Let me walk you through it.
 
-# section 3
+## My places
+
+I am originally from Sacramento, CA so all of my adventures branch out from there. My favorite thing to do there is to visit my favorite independent coffee shops and enjoy a drink that is a little too expensive. But it makes for a great meeting place to see old friends.
+
+Moving to Santa Barbara, CA was one of the best decisions I have made. I am making it my mission to catch as many sunset walks as I can before my time expires here.
+
+I've also had the privilege of travelling abroad.
+
+## My plans
+
+
+
