@@ -5,10 +5,10 @@ toc: false
 ---
 ::::: {layout-nrow="1"}
 ::: figure
-![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.jpg){.regular-hover}
+![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.JPG){.regular-hover}
 :::
 :::figure
-![I hyperbolically declared this was the best day of my life](images/tree_pose.jpg){.regular-hover}
+![I hyperbolically declared this was the best day of my life](images/tree_pose.JPG){.regular-hover}
 :::
 :::
 
