@@ -4,14 +4,17 @@ description: "My midterm project for ENVS 193DS: Statistics for Environmental Sc
 format: html
 toc: false
 categories:
-  - R
+  - R/RStudio
   - Data Visualization
   - Final Project
 ---
+
 ## Context
+
 The directions for this assignment can be found on the ENVS 193DS course [website](https://winter-2026.envs-193ds.com/assignments/midterm).
 
 ## Rendered product
+
 [View](midterm.pdf)
 
 ![](midterm.pdf){width="100%" height="700px"}
