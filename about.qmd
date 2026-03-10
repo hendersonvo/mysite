@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About me"
 toc: false
 about:
   template: jolla
@@ -11,6 +11,8 @@ about:
     - text: Email
       href: mailto:hendersonvo@ucsb.edu
 ---
+
+![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.JPG){width="100%" height="400px"}
 
 3 photos of me throughout this page
 

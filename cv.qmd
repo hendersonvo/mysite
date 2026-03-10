@@ -1,7 +1,12 @@
 ---
-title: "CV"
+title: "Curriculum Vitae"
+toc: false
 ---
 
-Updated March 2026
+Updated March 2026. [View](https://drive.google.com/file/d/1qU8e4H6B-PGdhMZKixZm1AT8z80a9asK/view?usp=sharing)
 
-![](CV_Henderson_Vo.pdf){width=100% height=700px}
+--------------
+
+![](CV_Henderson_Vo.pdf){width="100%" height="700px"}
+
+--------------

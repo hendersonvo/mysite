@@ -8,8 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - cv.qmd
+      - href: about.qmd
+        text: About
+      - href: cv.qmd
+        text: CV
       - projectpage.qmd
       - flex.qmd
 

@@ -4,21 +4,21 @@
     "href": "index.html",
     "title": "Henderson Vo",
     "section": "",
-    "text": "Welcome!\nMy name is Henderson and I’m happy you’re here! This website is meant to act like a personal portfolio. Feel free to browse and learn more about my work.\n\nI am currently studying at UC Santa Barbara to earn my bachelor’s in Environmental Studies and Statistics & Data Science. In September 2025, I joined the Bren-Environmental Studies Fellows program.\nMy work revolves around quantitative ecology and climate resilience. Please reach out through email if you would like to chat."
+    "text": "Welcome!\nMy name is Henderson and I’m happy you’re here! This website is meant to act as a personal portfolio. Feel free to browse and learn more about my work.\n\nI am currently studying at UC Santa Barbara to earn my bachelor’s in Environmental Studies and Statistics & Data Science. In September 2025, I joined the Bren-Environmental Studies Fellows program.\nMy work revolves around quantitative ecology and climate resilience. Please reach out through email if you would like to chat."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About me",
     "section": "",
-    "text": "3 photos of me throughout this page\nmore sample text\n\nsection 1\n\n\nsection 2\n\n\nsection 3"
+    "text": "A large tree “cookie” at Calaveras Big Trees State Park\n\n\n3 photos of me throughout this page\nmore sample text\n\nsection 1\n\n\nsection 2\n\n\nsection 3"
   },
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "CV",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "Updated March 2026"
+    "text": "Updated March 2026. View"
   },
   {
     "objectID": "flex.html",
@@ -33,5 +33,12 @@
     "title": "Projects",
     "section": "",
     "text": "My projects\nat least one post with code, its output, and writing about what you’re doing and why\nat least one post with project or paper description (from a job, research project, class)\nmore sample text"
+  },
+  {
+    "objectID": "projectpage.html#monte-carlo-simulation-blackjack",
+    "href": "projectpage.html#monte-carlo-simulation-blackjack",
+    "title": "Projects",
+    "section": "Monte Carlo Simulation: Blackjack",
+    "text": "Monte Carlo Simulation: Blackjack\nIf you don’t know, blackjack is a common card game where the dealer and the players all try to attain cards whose values accumulate as close to 21 without surpassing it. As a player, you start with two cards and can either “hit” or “pass”, meaning you can choose to receive another card from the dealer or choose to not take any more cards.\nI was curious to know how likely it is that a player would win if they always choose to pass and keep their two cards. So, I scripted a simulation in Python to test it out. Over 100,000 iterations, I began to see the win rate converge around 42% and the tie (“push”) rate converge around 5%. Once again, the house takes the advantage. How fun!\nLearn more on my GitHub here.\n\nimport random\nimport matplotlib.pyplot as plt\n\ndef card_value(number):\n    ''' returns the value of a card according to their position in a list of 52 standard cards, defined by a table\n        param number is any integer from 0 to 51\n    '''\n    if number not in list(range(52)):\n        print(\"Not a valid card\")\n    elif number in ([0, 10, 20, 30, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]): # corresponds to a 10, J, Q, or K\n        return 10\n    elif number % 10 == 1: # corresponds to an ace\n        return 1\n    elif number % 10 == 2:\n        return 2\n    elif number % 10 == 3:\n        return 3\n    elif number % 10 == 4:\n        return 4\n    elif number % 10 == 5:\n        return 5\n    elif number % 10 == 6:\n        return 6\n    elif number % 10 == 7:\n        return 7\n    elif number % 10 == 8:\n        return 8\n    else:\n        return 9\n\ndef player(cards):\n    ''' returns the score of the player's hand calculated from the first two cards in the deck\n        param cards is a list of integers\n    '''\n    ace_count = 0 # initializing the number of times the player draws an ace\n    score = 0 # initializing total score\n\n    for i in cards[0:2]:\n        if card_value(i) == 1 and ace_count == 0:\n            score += 11 # adds 11 to score for the first ace\n            ace_count += 1\n        else:\n            score += card_value(i)\n    return score\n        \n\ndef dealer(cards):\n    ''' returns the score of the dealer after drawing enough cards to have a hand equal to or greater than 17\n        param cards is a list of integers\n    '''\n    score = 0 \n    i = 2 \n    while score &lt; 17: \n        score += card_value(cards[i])\n        i += 1 \n    return score\n\nnum_games = 100000\n\n# initialize player wins, pushes, win streaks, and score dictionary\n\nnum_wins = 0\nnum_push = 0\n\nwin_streak = 0\nlongest_streak = 0\n\nscore_dict = {4:0, 5:0, 6:0, 7:0, 8:0, 9:0, 10:0, 11:0, 12:0, 13:0, 14:0, 15:0, 16:0, 17:0, 18:0, 19:0, 20:0, 21:0}\n\n\nfor i in range(num_games):\n    cards = list(range(52))\n    random.shuffle(cards)\n    p = player(cards) \n    score_dict[p] += 1 \n    d = dealer(cards) \n\n    if p &gt; d or d &gt; 21: \n        num_wins += 1\n        win_streak += 1\n\n        if win_streak &gt; longest_streak: \n            longest_streak = win_streak\n    elif p == d:\n        num_push += 1 \n    elif p &lt; d:\n        win_streak = 0 \n\n\n\nwin_prob = num_wins / num_games\npush_prob = num_push / num_games\n\nprint(f\"Probability player wins: {win_prob * 100:.4f}%\")\nprint(f\"Probability of push: {push_prob * 100:.4f}%\")\nprint(f\"Longest winning streak: {longest_streak} games\")\nprint(score_dict)\n\n# Extract data for plotting\nscores = list(score_dict.keys())\nfrequencies = list(score_dict.values())\n\n# Create a bar chart\nplt.figure(figsize=(10, 6))\nplt.bar(scores, frequencies, color='skyblue', edgecolor='black')\nplt.title(f'Distribution of Player Scores (N={num_games:,})')\nplt.xlabel('Final Score')\nplt.ylabel('Frequency')\nplt.xticks(scores)\nplt.grid(axis='y', alpha=0.5)\n\n# Save the plot and display\nplt.savefig('distribution_plot.png')\nplt.show()"
   }
 ]
