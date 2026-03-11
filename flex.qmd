@@ -14,7 +14,14 @@ interactive map here?
 #| message: false
 #| warning: false
 
+# load packages
 library(leaflet)
+library(tidyverse)
+
+# load and clean data
+gps <- read_csv("data/photo_gps.csv")
+  
+
 ```
 
 ```{r}
@@ -29,9 +36,19 @@ site_map <- leaflet() |>
   addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |> 
   
   # set view over Santa Barbara Channel ----
-  setView(lng =  -119.83, lat = 34.44, zoom = 9)
+  setView(lng =  -119.83, lat = 34.44, zoom = 9) |> 
   
+  # add MPA markers ----
+  addMarkers(data = gps, group = "MPA Sites",
+             lng = ~longitude, lat = ~latitude,
+             popup = paste("Site Name:", gps$location, "<br>",
+                           "Coordinates (lat/long):", gps$latitude, ",", gps$longitude)) |> 
   
+  # add layers control (toggle base map tiles & markers based on group IDs) ----
+  addLayersControl(
+    baseGroups = c("ESRI World Imagery", "ESRI Oceans"),
+    overlayGroups = c("MPA Sites", "Non-MPA Sites"))
+
 
 # print map ----
 site_map

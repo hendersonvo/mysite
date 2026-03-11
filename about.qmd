@@ -15,9 +15,8 @@ Hi! My name is Henderson and I am a third-year undergraduate at UC Santa Barbara
 
 I really love trees. I knew that I loved trees for the first time during my sixth-grade camping trip (my first ever camping trip) and I smelled the petrichor as I stepped off the bus. Since then, I always imagined myself working with trees in some capacity--urban forestry, forest restoration, ecohydrological research, to name a few.
 
-::: {layout-style="auto" layout-nrow=1}
+::: {layout-style="auto" layout-nrow="1"}
 ![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.jpg){group="my-gallery"}
-
 
 ![The biggest crossection of a tree trunk I've seen yet](images/tree_shot.jpg){group="my-gallery"}
 
@@ -26,7 +25,7 @@ I really love trees. I knew that I loved trees for the first time during my sixt
 
 That being said, I actually didn't grow up seeing many forests at all. I am originally from Sacramento, CA so all of my adventures branch out from there. My favorite thing to do there is to visit my favorite independent coffee shops and enjoy a drink that's a little too expensive. But it makes for a great meeting place to see old friends.
 
-Moving to Santa Barbara, CA was one of the best decisions I have made. I am making it my mission to catch as many sunset walks as I can before my time expires here.
+Moving to Santa Barbara was easily one of the best decisions I have made. One of my favorite things about living here are the sunsets. I like to walk the trails on the bluffs leading to Sands Beach near UCSB's Coal Oil Point Reserve. It's a great unwinding activity to do with friends. 
 
 I've also had the privilege of travelling across California and abroad. Since starting university, I've slowly increased my area of visitation outside of my NorCal bubble. Check out my Travels page for more details.
 
