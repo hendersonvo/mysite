@@ -1,0 +1,19 @@
+---
+title: "CMPSC 9: Python Labs"
+format: html
+---
+
+In the Winter 2026 quarter I took CMPSC 9: Intermediate Python, where I had weekly coding labs which I treated like my weekly enrichment activity. These were super fun to work through and it really helped me solidify the concepts of object-oriented programming, inheritance, sorting algorithms, etc. that we learned throughout the course.
+
+You can find the instructions to all of my lab assignments [here](https://ucsb-cs9.github.io/w26/).
+
+And you can find all of my lab scripts in my [github repository](https://github.com/hendersonvo/cmpsc9_labs#).
+
+## Personal favorites
+I thought these ones were especially fun to do. 
+
+### lab04 : Maze Solver using Stacks
+
+### lab07 : Fresh Tea Shipping System
+
+### lab08 + lab09 : Binary Search Tree (BST) Course Catalog 
