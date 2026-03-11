@@ -15,13 +15,17 @@ Hi! My name is Henderson and I am a third-year undergraduate at UC Santa Barbara
 
 I really love trees. I knew that I loved trees for the first time during my sixth-grade camping trip (my first ever camping trip) and I smelled the petrichor as I stepped off the bus. Since then, I always imagined myself working with trees in some capacity--urban forestry, forest restoration, ecohydrological research, to name a few.
 
-::: {layout-style="auto" layout-nrow="1"}
+:::::: {layout-style="auto" layout-nrow="1"}
+::: figure
 ![A large tree "cookie" at Calaveras Big Trees State Park](images/tree_cookie.jpg){group="my-gallery"}
-
+:::
+::: figure
 ![The biggest crossection of a tree trunk I've seen yet](images/tree_shot.jpg){group="my-gallery"}
-
+:::
+::: figure
 ![I hyperbolically declared this was the best day of my life](images/tree_pose.jpg){group="my-gallery"}
 :::
+::::::
 
 That being said, I actually didn't grow up seeing many forests at all. I am originally from Sacramento, CA so all of my adventures branch out from there. My favorite thing to do there is to visit my favorite independent coffee shops and enjoy a drink that's a little too expensive. But it makes for a great meeting place to see old friends.
 
