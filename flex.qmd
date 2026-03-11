@@ -8,3 +8,32 @@ Placeholder (free for all)
 interactive map here?
 
 # include sections
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(leaflet)
+```
+
+```{r}
+# initialize map ----
+site_map <- leaflet() |>  
+  
+  # add base map tiles (use `addTiles()` for Google maps tiles, OR `addProviderTiles()` for 3rd party base maps: https://leaflet-extras.github.io/leaflet-providers/preview/) ----
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") |>  
+  addProviderTiles(providers$Esri.OceanBasemap, group = "ESRI Oceans") |> 
+  
+  # add mini map ----
+  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |> 
+  
+  # set view over Santa Barbara Channel ----
+  setView(lng =  -119.83, lat = 34.44, zoom = 9)
+  
+  
+
+# print map ----
+site_map
+```
+

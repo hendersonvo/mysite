@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -148,28 +151,28 @@ ul.task-list li input[type="checkbox"] {
 <section id="my-places" class="level2">
 <h2 class="anchored" data-anchor-id="my-places">My places</h2>
 <p>I really love trees. I knew that I loved trees for the first time during my sixth-grade camping trip (my first ever camping trip) and I smelled the petrichor as I stepped off the bus. Since then, I always imagined myself working with trees in some capacity–urban forestry, forest restoration, ecohydrological research, to name a few.</p>
-<div class="quarto-layout-panel" data-layout-nrow="1">
+<div class="quarto-layout-panel" data-layout-style="masonry" data-layout-nrow="1">
 <div class="quarto-layout-row">
-<div class="figure quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/tree_cookie.jpg" class="regular-hover img-fluid figure-img"></p>
+<p><a href="images/tree_cookie.jpg" class="lightbox" data-gallery="my-gallery" title="A large tree “cookie” at Calaveras Big Trees State Park"><img src="images/tree_cookie.jpg" class="img-fluid figure-img" alt="A large tree “cookie” at Calaveras Big Trees State Park"></a></p>
 <figcaption>A large tree “cookie” at Calaveras Big Trees State Park</figcaption>
 </figure>
 </div>
 </div>
-<div class="figure quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/tree_shot.jpg" class="regular-hover img-fluid figure-img"></p>
+<p><a href="images/tree_shot.jpg" class="lightbox" data-gallery="my-gallery" title="The biggest crossection of a tree trunk I’ve seen yet"><img src="images/tree_shot.jpg" class="img-fluid figure-img" alt="The biggest crossection of a tree trunk I’ve seen yet"></a></p>
 <figcaption>The biggest crossection of a tree trunk I’ve seen yet</figcaption>
 </figure>
 </div>
 </div>
-<div class="figure quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/tree_pose.jpg" class="regular-hover img-fluid figure-img"></p>
+<p><a href="images/tree_pose.jpg" class="lightbox" data-gallery="my-gallery" title="I hyperbolically declared this was the best day of my life"><img src="images/tree_pose.jpg" class="img-fluid figure-img" alt="I hyperbolically declared this was the best day of my life"></a></p>
 <figcaption>I hyperbolically declared this was the best day of my life</figcaption>
 </figure>
 </div>
@@ -592,6 +595,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"right","loop":false,"openEffect":"fade","selector":".lightbox","skin":"styles"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
