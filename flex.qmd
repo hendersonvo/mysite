@@ -3,28 +3,25 @@ title: "My travel portfolio"
 toc: false
 ---
 
-Placeholder (free for all)
 
-interactive map here?
+## Oh, the places I've been?
 
-# include sections
+It turns out that I've taken over 8,000 photos in the past five years that have location data attached to them. Come with me to revisit some of the places I've been!
+
 
 ```{r}
-#| echo: false
+#| label: Coding the interactive map
 #| message: false
 #| warning: false
+#| code-fold: true
 
 # load packages
 library(leaflet)
 library(tidyverse)
 
-# load and clean data
+# load data
 gps <- read_csv("data/photo_gps.csv")
-  
 
-```
-
-```{r}
 # initialize map ----
 site_map <- leaflet() |>  
   
@@ -38,19 +35,21 @@ site_map <- leaflet() |>
   # set view over Santa Barbara Channel ----
   setView(lng =  -119.83, lat = 34.44, zoom = 9) |> 
   
-  # add MPA markers ----
-  addMarkers(data = gps, group = "MPA Sites",
+  # add location bubbles and markers ----
+  addMarkers(data = gps, clusterOptions = markerClusterOptions(),
              lng = ~longitude, lat = ~latitude,
-             popup = paste("Site Name:", gps$location, "<br>",
-                           "Coordinates (lat/long):", gps$latitude, ",", gps$longitude)) |> 
+             popup = paste("Location:", gps$location, "<br>",
+                           "Coordinates (lat/long):", gps$latitude, ",",
+                           gps$longitude)) |> 
+
   
-  # add layers control (toggle base map tiles & markers based on group IDs) ----
+  # add layers control ----
   addLayersControl(
-    baseGroups = c("ESRI World Imagery", "ESRI Oceans"),
-    overlayGroups = c("MPA Sites", "Non-MPA Sites"))
+    baseGroups = c("ESRI World Imagery", "ESRI Oceans"))
 
 
 # print map ----
 site_map
 ```
 
+------------
