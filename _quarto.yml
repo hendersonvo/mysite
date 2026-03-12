@@ -19,14 +19,8 @@ website:
 
 format:
   html:
-    theme:
-      light:
-      - flatly
-      - brand
-      dark: 
-      - solar
-      - brand
-    css: styles.css
+    theme: styles.scss
+    mainfont: "IBM Plex Serif"
     toc: true
 
 editor: visual
