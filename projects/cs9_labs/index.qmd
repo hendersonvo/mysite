@@ -1,6 +1,6 @@
 ---
-title: "CMPSC 9: Python Labs"
-description: "My weekly coding labs for Intermediate Python"
+title: "CMPSC 9 Python Labs"
+description: "My weekly coding labs for CMPSC 9: Intermediate Python"
 image: python_lab.png
 format: html
 date: 2026-03-02

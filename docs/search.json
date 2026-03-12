@@ -116,7 +116,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Analyzing Win-Rate Variance Using a Monte Carlo Simulation\n\n\n\nPython\n\nModeling and Simulation\n\nData Visualization\n\nFinal Project\n\n\n\nThe Law of Large Numbers meets blackjack\n\n\n\n\n\n\nJul 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCMPSC 9: Python Labs\n\n\n\nPython\n\n\n\nMy weekly coding labs for Intermediate Python\n\n\n\n\n\n\nMar 2, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nENVS193DS Midterm Project\n\n\n\nR/RStudio\n\nData Visualization\n\nFinal Project\n\n\n\nMy midterm project for ENVS 193DS: Statistics for Environmental Science\n\n\n\n\n\n\nFeb 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nWildlife Conservation in Costa Rica\n\n\n\nR/RStudio\n\nModeling and Simulation\n\nConservation\n\nFinal Project\n\n\n\nAn analysis of weather effects on arribada frequency\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Analyzing Win-Rate Variance Using a Monte Carlo Simulation\n\n\n\nPython\n\nModeling and Simulation\n\nData Visualization\n\nFinal Project\n\n\n\nThe Law of Large Numbers meets blackjack\n\n\n\n\n\n\nJul 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCMPSC 9 Python Labs\n\n\n\nPython\n\n\n\nMy weekly coding labs for CMPSC 9: Intermediate Python\n\n\n\n\n\n\nMar 2, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nENVS193DS Midterm Project\n\n\n\nR/RStudio\n\nData Visualization\n\nFinal Project\n\n\n\nMy midterm project for ENVS 193DS: Statistics for Environmental Science\n\n\n\n\n\n\nFeb 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nWildlife Conservation in Costa Rica\n\n\n\nR/RStudio\n\nModeling and Simulation\n\nConservation\n\nFinal Project\n\n\n\nAn analysis of weather effects on arribada frequency\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html#predicting-sea-turtle-nesting-behavior-in-costa-rica",
@@ -219,7 +219,7 @@
   {
     "objectID": "projects/cs9_labs/index.html",
     "href": "projects/cs9_labs/index.html",
-    "title": "CMPSC 9: Python Labs",
+    "title": "CMPSC 9 Python Labs",
     "section": "",
     "text": "In the Winter 2026 quarter I took CMPSC 9: Intermediate Python, where I had weekly coding labs which I treated like my weekly enrichment activity. These were super fun to work through and it really helped me solidify the concepts of object-oriented programming, inheritance, sorting algorithms, etc. that we learned throughout the course.\nYou can find the instructions to all of my lab assignments here.\nAnd you can find all of my lab scripts in my github repository."
   },
