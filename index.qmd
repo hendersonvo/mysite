@@ -13,6 +13,8 @@ about:
       href: https://linkedin.com/in/henderson-vo-a1b712275
     - text: Email
       href: mailto:hendersonvo@ucsb.edu
+lightbox: 
+  css-class: "styles"
 ---
 
 ### Welcome!

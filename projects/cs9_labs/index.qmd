@@ -4,6 +4,8 @@ description: "My weekly coding labs for Intermediate Python"
 image: python_lab.png
 format: html
 date: 2026-03-02
+lightbox: 
+  css-class: "styles"
 categories:
     - Python
 ---

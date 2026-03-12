@@ -2,6 +2,8 @@
 title: "My travel portfolio"
 subtitle: I will keep updating this page as I visit more places!
 toc: false
+lightbox: 
+  css-class: "styles"
 ---
 
 ## Oh, the places I've been?

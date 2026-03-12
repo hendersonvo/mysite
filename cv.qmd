@@ -1,6 +1,8 @@
 ---
 title: "Curriculum Vitae"
 toc: false
+lightbox: 
+  css-class: "styles"
 ---
 
 Updated March 2026. [View](CV_Henderson_Vo.pdf)

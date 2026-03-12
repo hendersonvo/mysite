@@ -5,6 +5,8 @@ image: midterm_thumbnail.png
 date: 2026-02-12
 format: html
 toc: false
+lightbox: 
+  css-class: "styles"
 categories:
   - R/RStudio
   - Data Visualization

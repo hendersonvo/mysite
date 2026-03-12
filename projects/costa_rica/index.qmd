@@ -4,6 +4,8 @@ description: An analysis of weather effects on arribada frequency
 date: 2025-08-18
 format: html
 image: cr_thumbnail.JPG
+lightbox: 
+  css-class: "styles"
 categories: 
   - R/RStudio
   - Modeling and Simulation
