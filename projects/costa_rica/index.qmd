@@ -1,7 +1,9 @@
 ---
 title: "Wildlife Conservation in Costa Rica"
 description: An analysis of weather effects on arribada frequency
+date: 2025-08-18
 format: html
+image: cr_thumbnail.JPG
 categories: 
   - R/RStudio
   - Modeling and Simulation

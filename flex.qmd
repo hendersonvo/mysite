@@ -1,13 +1,12 @@
 ---
 title: "My travel portfolio"
+subtitle: I will keep updating this page as I visit more places!
 toc: false
 ---
-
 
 ## Oh, the places I've been?
 
 It turns out that I've taken over 8,000 photos in the past five years that have location data attached to them. Come with me to revisit some of the places I've been!
-
 
 ```{r}
 #| label: Coding the interactive map
@@ -52,4 +51,37 @@ site_map <- leaflet() |>
 site_map
 ```
 
-------------
+------------------------------------------------------------------------
+
+## Portugal
+
+:::::: {layout-style="auto" layout-ncol="3"}
+::: figure
+![City view of Lisbon](images/lisbon1.jpg){.regular-hover}
+:::
+
+::: figure
+![Rossio Train Station, Lisbon](images/lisbon2.jpg){.regular-hover}
+:::
+
+::: figure
+![Jardim Oriental Bacalhôa Buddha Eden, Carvalhal](images/jardim_eden1.jpg){.regular-hover}
+:::
+
+::: figure
+![A market in Óbidos](images/obidos1.jpg){.regular-hover}
+:::
+
+::: figure
+![The Literary Man Óbidos Hotel](images/obidos2.JPG){.regular-hover}
+:::
+
+::: figure
+![Castles in Sintra](images/sintra2.JPG){.regular-hover}
+:::
+
+::: figure
+![City view of Sintra](images/sintra1.jpg){.regular-hover}
+:::
+
+::::::

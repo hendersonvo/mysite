@@ -2,6 +2,7 @@
 title: "Analyzing Win-Rate Variance Using a Monte Carlo Simulation"
 description: The Law of Large Numbers meets blackjack
 format: html
+date: 2025-07-15
 categories:
     - Python
     - Modeling and Simulation

@@ -20,8 +20,11 @@ website:
 format:
   html:
     theme:
+      light:
       - flatly
       - brand
+      dark: 
+      - solar
     css: styles.css
     toc: true
 

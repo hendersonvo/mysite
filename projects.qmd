@@ -3,6 +3,6 @@ title: "Projects"
 subtitle: "Take a look at some of what I've been working on lately!"
 listing:
   contents: projects
-  type: default
+  type: grid
   categories: true
 ---

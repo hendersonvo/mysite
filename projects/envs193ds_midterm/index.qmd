@@ -1,6 +1,8 @@
 ---
 title: "ENVS193DS Midterm Project"
 description: "My midterm project for ENVS 193DS: Statistics for Environmental Science"
+image: midterm_thumbnail.png
+date: 2026-02-12
 format: html
 toc: false
 categories:
