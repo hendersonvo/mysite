@@ -14,4 +14,4 @@ This repository holds different file types that create the pages, formatting, an
 
 # Rendered output
 
-You can find my rendered website [here.](hendersonvo.github.io)
+You can find my rendered website [here.](https://hendersonvo.github.io/)
