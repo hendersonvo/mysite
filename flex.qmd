@@ -55,9 +55,11 @@ site_map
 
 ------------------------------------------------------------------------
 
-## Portugal
+## Portugal, Summer 2023
 
-:::::: {layout-style="auto" layout-ncol="3"}
+Here are some of my favorite moments from my first international trip! This was a milestone moment for myself before starting my university life. 
+
+:::::::::: {layout-style="auto" layout-ncol="3"}
 ::: figure
 ![City view of Lisbon](images/lisbon1.jpg){.regular-hover}
 :::
@@ -85,5 +87,4 @@ site_map
 ::: figure
 ![City view of Sintra](images/sintra1.jpg){.regular-hover}
 :::
-
-::::::
+::::::::::
