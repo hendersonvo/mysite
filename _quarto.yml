@@ -25,6 +25,7 @@ format:
       - brand
       dark: 
       - solar
+      - brand
     css: styles.css
     toc: true
 
