@@ -243,5 +243,26 @@
     "title": "My travel portfolio",
     "section": "Portugal, Summer 2023",
     "text": "Portugal, Summer 2023\nHere are some of my favorite moments from my first international trip! This was a milestone moment for myself before starting my university life.\n\n\n\n\n\n\nCity view of Lisbon\n\n\n\n\n\n\n\nRossio Train Station, Lisbon\n\n\n\n\n\n\n\nJardim Oriental Bacalhôa Buddha Eden, Carvalhal\n\n\n\n\n\n\n\n\n\nA market in Óbidos\n\n\n\n\n\n\n\nThe Literary Man Óbidos Hotel\n\n\n\n\n\n\n\nCastles in Sintra\n\n\n\n\n\n\n\n\n\nCity view of Sintra"
+  },
+  {
+    "objectID": "travels.html",
+    "href": "travels.html",
+    "title": "My travel portfolio",
+    "section": "",
+    "text": "It turns out that I’ve taken over 11,000 photos in the past five years that have location data attached to them. Come with me to revisit some of the places I’ve been!\n\n\nCode\n# load packages\nlibrary(leaflet)\nlibrary(tidyverse)\n\n# load data\ngps &lt;- read_csv(\"data/photo_gps_updated.csv\")\n\n# initialize map ----\nsite_map &lt;- leaflet() |&gt;  \n  \n  # add base map tiles (use `addTiles()` for Google maps tiles, OR `addProviderTiles()` for 3rd party base maps: https://leaflet-extras.github.io/leaflet-providers/preview/) ----\n  addProviderTiles(providers$Esri.WorldImagery, group = \"ESRI World Imagery\") |&gt;  \n  addProviderTiles(providers$Esri.OceanBasemap, group = \"ESRI Oceans\") |&gt; \n  \n  # add mini map ----\n  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |&gt; \n  \n  # set view over Santa Barbara Channel ----\n  setView(lng =  -119.83, lat = 34.44, zoom = 9) |&gt; \n  \n  # add location bubbles and markers ----\n  addMarkers(data = gps, clusterOptions = markerClusterOptions(),\n             lng = ~longitude, lat = ~latitude,\n             popup = paste(\"Location:\", gps$location, \"&lt;br&gt;\",\n                           \"Coordinates (lat/long):\", gps$latitude, \",\",\n                           gps$longitude)) |&gt; \n\n  \n  # add layers control ----\n  addLayersControl(\n    baseGroups = c(\"ESRI World Imagery\", \"ESRI Oceans\"))\n\n\n# print map ----\nsite_map"
+  },
+  {
+    "objectID": "travels.html#oh-the-places-ive-been",
+    "href": "travels.html#oh-the-places-ive-been",
+    "title": "My travel portfolio",
+    "section": "",
+    "text": "It turns out that I’ve taken over 11,000 photos in the past five years that have location data attached to them. Come with me to revisit some of the places I’ve been!\n\n\nCode\n# load packages\nlibrary(leaflet)\nlibrary(tidyverse)\n\n# load data\ngps &lt;- read_csv(\"data/photo_gps_updated.csv\")\n\n# initialize map ----\nsite_map &lt;- leaflet() |&gt;  \n  \n  # add base map tiles (use `addTiles()` for Google maps tiles, OR `addProviderTiles()` for 3rd party base maps: https://leaflet-extras.github.io/leaflet-providers/preview/) ----\n  addProviderTiles(providers$Esri.WorldImagery, group = \"ESRI World Imagery\") |&gt;  \n  addProviderTiles(providers$Esri.OceanBasemap, group = \"ESRI Oceans\") |&gt; \n  \n  # add mini map ----\n  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |&gt; \n  \n  # set view over Santa Barbara Channel ----\n  setView(lng =  -119.83, lat = 34.44, zoom = 9) |&gt; \n  \n  # add location bubbles and markers ----\n  addMarkers(data = gps, clusterOptions = markerClusterOptions(),\n             lng = ~longitude, lat = ~latitude,\n             popup = paste(\"Location:\", gps$location, \"&lt;br&gt;\",\n                           \"Coordinates (lat/long):\", gps$latitude, \",\",\n                           gps$longitude)) |&gt; \n\n  \n  # add layers control ----\n  addLayersControl(\n    baseGroups = c(\"ESRI World Imagery\", \"ESRI Oceans\"))\n\n\n# print map ----\nsite_map"
+  },
+  {
+    "objectID": "travels.html#portugal-summer-2023",
+    "href": "travels.html#portugal-summer-2023",
+    "title": "My travel portfolio",
+    "section": "Portugal, Summer 2023",
+    "text": "Portugal, Summer 2023\nHere are some of my favorite moments from my first international trip! This was a milestone moment for myself before starting my university life.\n\n\n\n\n\n\nCity view of Lisbon\n\n\n\n\n\n\n\nRossio Train Station, Lisbon\n\n\n\n\n\n\n\nJardim Oriental Bacalhôa Buddha Eden, Carvalhal\n\n\n\n\n\n\n\n\n\nA market in Óbidos\n\n\n\n\n\n\n\nThe Literary Man Óbidos Hotel\n\n\n\n\n\n\n\nCastles in Sintra\n\n\n\n\n\n\n\n\n\nCity view of Sintra"
   }
 ]
