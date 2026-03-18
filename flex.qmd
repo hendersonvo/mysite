@@ -8,7 +8,7 @@ lightbox:
 
 ## Oh, the places I've been?
 
-It turns out that I've taken over 8,000 photos in the past five years that have location data attached to them. Come with me to revisit some of the places I've been!
+It turns out that I've taken over 11,000 photos in the past five years that have location data attached to them. Come with me to revisit some of the places I've been!
 
 ```{r}
 #| label: Coding the interactive map
@@ -21,7 +21,7 @@ library(leaflet)
 library(tidyverse)
 
 # load data
-gps <- read_csv("data/photo_gps.csv")
+gps <- read_csv("data/photo_gps_updated.csv")
 
 # initialize map ----
 site_map <- leaflet() |>  
@@ -57,7 +57,7 @@ site_map
 
 ## Portugal, Summer 2023
 
-Here are some of my favorite moments from my first international trip! This was a milestone moment for myself before starting my university life. 
+Here are some of my favorite moments from my first international trip! This was a milestone moment for myself before starting my university life.
 
 :::::::::: {layout-style="auto" layout-ncol="3"}
 ::: figure
