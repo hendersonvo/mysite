@@ -4,6 +4,8 @@ subtitle: I will keep updating this page as I visit more places!
 toc: false
 lightbox: 
   css-class: "styles"
+filters:
+  - carousel
 ---
 
 ## Oh, the places I've been?
